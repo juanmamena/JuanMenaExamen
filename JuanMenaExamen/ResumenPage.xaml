@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="JuanMenaExamen.ResumenPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="#15497B" Padding="24" CornerRadius="0">
+                <Label Text="Bienvenido" HorizontalTextAlignment="Center" TextColor="White" FontSize="Title"/>
+
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Usuario Conectado:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Title" BackgroundColor="#2267AA" TextColor="White"></Label>
+                <Label Grid.Row="0" Grid.Column="1" x:Name="lblUser" x:Uid="lblUser"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Title" BackgroundColor="#21A765" TextColor="White"></Label>
+
+                
+                <Label Grid.Row="1" Grid.Column="0" Text="Nombre:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="2" Grid.Column="0" Text="Total a Pagar:" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                
+                
+                <Label Grid.Row="1" Grid.Column="1" x:Name="lblNombre" x:Uid="lblNombre" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                <Label Grid.Row="2" Grid.Column="1" x:Name="lblTotal" x:Uid="lblTotal" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Subtitle"></Label>
+                
+
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
